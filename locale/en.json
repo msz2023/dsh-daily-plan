@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Daily plan",
+    "description": "**Daily plan** fills the main panel: today's to-dos are grouped by due time (overdue, earlier, morning, afternoon, evening, later, no time set) or sorted by urgency. A prominent quote banner at the bottom rotates daily through poetry, quotes, movie lines and English sayings (fetched online, with local lines as an offline fallback). Set a date and time, add a multi-line note, mark a priority, and repeat daily, on weekdays, weekly or monthly; press **Start focus** for a full-screen countdown. Finishing a task brings a short encouragement, due reminders fire while the panel is open, and a delete can be undone for eight seconds. A **Completed** view lists finished tasks with their completion time and content, filters by a custom date range, and exports the same view as Markdown or Excel. Tasks live in a local JSON file and survive restarts; the agent reads and writes the same list through the `daily_tasks` tool. Optional cloud sync (S3-compatible object storage or WebDAV) shares one list across computers and is configured with the `daily_sync` tool."
+  }
+}

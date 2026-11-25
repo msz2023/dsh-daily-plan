@@ -1,0 +1,67 @@
+{
+  "name": "dsh-daily-plan",
+  "version": "1.6.6",
+  "description": "Today's plan for DeepSeek Harness: a daily to-do panel grouped by due time, with notes, date navigation, a full-screen focus timer, and optional cloud sync (S3 or WebDAV) so several computers share one list.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "sync.js",
+    "export.js",
+    "quote.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "todo",
+    "planner",
+    "tasks",
+    "focus",
+    "timer"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msz2023/dsh-daily-plan.git"
+  },
+  "homepage": "https://github.com/msz2023/dsh-daily-plan#readme",
+  "bugs": {
+    "url": "https://github.com/msz2023/dsh-daily-plan/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.2-rc.5"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
