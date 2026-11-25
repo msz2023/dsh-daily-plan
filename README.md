@@ -40,11 +40,12 @@ DeepSeek Harness 的「每日任务」插件：左侧边栏一级面板，按截
 
 ## Install
 
-In the DSH Web GUI open **插件 (Plugins) → 添加插件 (Add plugin)**. The dialog accepts a package name, a GitHub repository URL, or a local directory — enter one of:
+In the DSH Web GUI open **插件 (Plugins) → 添加插件 (Add plugin)**. The dialog accepts a package name, a GitHub repository URL, or a tarball URL — enter one of:
 
 ```
 dsh-daily-plan
 https://github.com/msz2023/dsh-daily-plan
+https://cn-nb2.rains3.com/daily-plan/plugins/dsh-daily-plan-1.6.6.tgz
 ```
 
 Or from a terminal with the `dsh` CLI:
